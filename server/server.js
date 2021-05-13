@@ -8,10 +8,12 @@ const schema = require('./schema/schema');
 const app = express();
 
 
-const MONGO_URI = 'mongodb+srv://indrajith:xwQ6lZIiY43gFR8F@graphql.7n3cf.mongodb.net/graphql?retryWrites=true&w=majority';
+const MONGO_URI = 'mongodb+srv://indrajith:A10aWYr3EUkjM4Py@graphql.7n3cf.mongodb.net/graphql?retryWrites=true&w=majority';
 if (!MONGO_URI) {
   throw new Error('You must provide a MongoLab URI');
 }
+
+
 
 mongoose.Promise = global.Promise;
 mongoose.connect(MONGO_URI);
